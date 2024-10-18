@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: darkred;
+    text-align: center;
+}
+h2{
+    color: darkred;
+    background-color: white;
+    text-align: Arial,center;
+    
+}
+
+  .container {
+    max-width: 600px; /* Maximale Breite des Containers */
+    margin: 50px auto;
+    padding: 20px; /* Innenabstand des Containers */
+    border-radius: 8px; /* Abgerundete Ecken */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schattenwurf um den Container */
+}
+
+.option[data-tooltip] {
+    position: relative;
+}
+
+.option[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: grey;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+.option {
+    display: flex; /* Flexbox für eine bessere Anordnung */
+    align-items: center; /* Zentriert die Bilder und Texte vertikal */
+    margin: 10px 0; /* Abstand zwischen den Optionen */
+}
+
+.option img {
+    width: 100px; /* Breite der Bilder */
+    height: 100px; /* Höhe der Bilder */
+    margin-right: 20px; /* Abstand zwischen Bild und Text */
+    border-radius: 5px; /* Abgerundete Ecken für die Bilder */
+}
+
+.option-image {
+    cursor: pointer; /* Zeigt den Zeiger an, wenn man über das Bild fährt */
+    transition: transform 0.2s; /* Übergangseffekt für die Hover-Anpassung */
+    position: relative; /* Erlaubt die Verwendung von z-index */
+    z-index: 1; /* Normaler z-index */
+}
+
+.option-image:hover {
+    transform: scale(1.50); /* Vergrößert das Bild bei Hovern */
+    z-index: 2; /* Höherer z-index beim Hover */
+}
+
+#question-image {
+    width: 100%; 
+    height: auto; /* Bildhöhe wird proportional zur Breite angepasst */
+    margin: 20px 0; 
+    border-radius: 8px; /* Abgerundete Ecken des Bildes */
+}
+
+/* Hover-Effekt für vergrößerten Text */
+.option-text:hover {
+    transform: scale(1.1); /* Text um 10% vergrößern bei Hover */
+    color: darkred; 
+}
