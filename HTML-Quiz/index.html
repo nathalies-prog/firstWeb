@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizzleDizzle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Willkommen beim Quiz!</h1>
+        <h6>Kleines Quiz gestaltet von Nathalie</h6>
+            <div id="quiz">
+                <h2 id="question">Frage wird hier angezeigt</h2>
+                <img id="question-image" src="" alt="Bild zur Frage" style="display: none;">
+                <div id="options">
+                </div>
+            </div>
+            <div id="result" style="display: none;">
+                <h2>Deine Persönlichkeit:</h2>
+                <p id="Personality"></p>
+                <p id="points"></p>
+                <button onclick="restartQuiz()">Nochmal spielen</button>
+            </div>
+        <script src="skript.js"></script>
+
+
+</body>
+</html>
