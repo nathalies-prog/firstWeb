@@ -47,7 +47,7 @@ const questions = [
         question: "Die Gesetze sind für einen Tag ausgesetzt, was tust Du?",
         options: [
             { text: "Eine Bank ausrauben.", image: "Images/Bank.jpg", points: 3 },
-            { text: "Jemanden Umbringen (bleibt geheim ;))", image: "Images/187.png", points: 4 },
+            { text: "Jemanden umbringen.", image: "Images/187.png", points: 4 },
             { text: "Nichts was ich sonst nicht auch tun würde.", image: "Images/Nichts.jpg", points: 1 },
             { text: "Etwas Anderes.", image: "Images/anders.jpg", points: 2 }
         ]
